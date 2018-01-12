@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-12T12:20:49+01:00
+
+====== Home ======
+Created piątek 12 styczeń 2018
+
+function() { dzialania ;
+}  - funkcja anonimowa 
+zaczynamy $  potem nawiasty okragle a w srodku selektor w cudzyslowie potem . (kropka) i potem jakas akcja  potem w nawiasach okraglych funkcja anonimowa 
+
+w jquery pierwszym sposobem selekcji jest selekcja obiektu z inentyfikatorem (#)
+
+===== dolaczenie jquery do strony =====
+<script src=... ></script>
+
+===== metody =====
+
+.hide() - ukrywa 
+.show() - pokazuje 
+.toggle() - ukrywa i pokazuje 
+.fadeIn() - pokazuje z animacja 
+.fadeOut() - ukrywa z animacja
+
