@@ -1,0 +1,47 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-22T09:55:32+01:00
+
+====== bazy danych ======
+Created poniedziałek 22 styczeń 2018
+
+baza danych- uporzadkiwany zbior informacji 
+
+===== projektowanie baz danych: =====
+- tabela
+- pola typ danych czyli liczby i tkast
+- rekord - zbior pol w obrebie jednej tabeli dotyczacej jednego obiektu
+
+
+__dobrze zaprojektowana baza danych powinna zajmowac minimum miejsca, byc wydajna, dane powinny byc spojne(nie powtarzac sie)__
+
+__relacyjna baza danych__ - baza ktos powstaje poprzed przeanalizowanie danych czyli umiescic dane w wielu tabelach polaczonych relacjami __(sklada sie z wielu tabel)__
+
+===== programy: =====
+- Microsoft Access (.accdb)
+- [[LibreOffice]] Base (.odb)
+- [[SQLLiteStudio]] (.db , .sqlite)
+
+jezyk SQL - strukturalny jezyk zapytan stosowany w bazie danych
+
+===== systemy/silniki baz danych: =====
+-MySQL
+-MariaDB
+-PostgreSQL
+-Oracle
+-SQLite
+
+===== typy danych: =====
+
+=== liczbowe ===
+-//integer//- liczby calkowite
+-//float// lub //real//- liczby zmiennoprzecinkowe
+
+=== tekstowe ===
+-//text// lub //varchar// (podaje sie dlugosc tekstu w ilosci znakow)
+-//string//-dluzsze teksty
+
+=== data i czas ===
+-//date//-do daty w formacie ISO np 2018-01-22
+-//DateTime//- data i czas
+
