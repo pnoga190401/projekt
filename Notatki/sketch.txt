@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-26T12:08:56+01:00
+
+====== sketch ======
+Created piątek 26 styczeń 2018
+
+https://p5js.org/
+
+os x i y zaczyna sie z lewego gornego brzegu
+
+canvas- obszar kreslenia
+
+colorzilla !!!!!!!
+
+  ellipse(100 , 100 , 30 ,80);      -kolko
+
+  line(10 , 10 , 60 , 60);
+  line(60 , 10 , 10 , 60);      -krzyzyk
