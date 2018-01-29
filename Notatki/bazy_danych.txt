@@ -15,7 +15,7 @@ baza danych- uporzadkiwany zbior informacji
 
 __dobrze zaprojektowana baza danych powinna zajmowac minimum miejsca, byc wydajna, dane powinny byc spojne(nie powtarzac sie)__
 
-__relacyjna baza danych__ - baza ktos powstaje poprzed przeanalizowanie danych czyli umiescic dane w wielu tabelach polaczonych relacjami __(sklada sie z wielu tabel)__
+**relacyjna baza danych** - baza ktos powstaje poprzed przeanalizowanie danych czyli umiescic dane w wielu tabelach polaczonych relacjami __(sklada sie z wielu tabel)__
 
 ===== programy: =====
 - Microsoft Access (.accdb)
@@ -44,4 +44,12 @@ jezyk SQL - strukturalny jezyk zapytan stosowany w bazie danych
 === data i czas ===
 -//date//-do daty w formacie ISO np 2018-01-22
 -//DateTime//- data i czas
+
+**klucz główny(primary key**)- pole ktorego wartosc jest unikalna w obrebie tabeli tzn ze kluicz glowny jednoznacznie identyfikuje klucz tabeli
+
+**klucz obcy(secondary key, REFERENCES tabel_name**) - klucz obcy pobiera wartosci z klucza glownego, laczy tabele zalezne z tabela glowna 
+
+===== typy relacji: =====
+-relacja jeden do wielu
+
 
