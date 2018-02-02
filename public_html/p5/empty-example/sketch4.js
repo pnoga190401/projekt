@@ -1,4 +1,4 @@
-
+var leght = 
 function setup() {
   x = y = 30
   // put setup code here

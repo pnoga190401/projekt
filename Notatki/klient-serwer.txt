@@ -1,0 +1,60 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-02T12:15:16+01:00
+
+====== klient-serwer ======
+Created piątek 02 luty 2018
+
+zainstaluj power shell
+
+===== serwer-" komputer" udostepniajacy zasoby =====
+jakie zasoby mozna udostepnic?
+udostepnia USŁUGI (ang. service, lista: [[/etc/services]])
+
+1) DNS - Domain Name System, port 53, zmianan nazw domenowych na adresy ip;  polecenie: ping
+
+2) HTTP - Hyper Text Transfer Protocol, komunikacja w zakresie stron www, port 80
+
+3) FTP - File Transfer Protocol, port 20,21
+
+4) SSH - Secure Shell, port 22
+
+**Klient**- "komputer" korzystajacy z uslug udostepnianych przez serwer, np przegladarka ww albo klient chat
+
+**Protokół** - "jezyk" porozumiewanie sie klienta z serwerem, protokoly definiowane sa w dokumentach RFC
+
+**Adres** IP - np publiczny 221.34.2.10
+
+**Port**-  liczba naturalna definiujaca uluge na serwerze, well know ports 0-1024. zob. -etc/serwices
+
+===== lokany serwer HTTP =====
+python - [[SimpleHTTPServer]]
+pytchon3 -m http.server
+(-m    - biblioteka)
+
+php -S [[localhost:8000]]
+
+domyslna nazwa serwera: port
+[[localhost:8000]]
+127.0.01:8000
+
+domyslny zasob: index.html
+
+===== przykladowa analiza =====
+URI -> URL
+http://lo1.sandomierz.pl/szukaj?words=parnas&search=
+
+http://  -protokol
+[[http://lo1.sandomierz.pl/szukaj?words=parna&search=|lo1.sandomierz.pl]]  -(pełnodomenowa) nazwa serwera
+[[/ankiety/szukaj]]  - zasob na serwerze
+?  -poczatek listy argumentow/parametrow
+[[http://lo1.sandomierz.pl/szukaj?words=parna&search=|words=parnas]]  - para,etr w formacie nazwa = wartosc
+& - znak ktory sluzy do rozdzielana parametrow
+[[http://lo1.sandomierz.pl/szukaj?words=parna&search=|search=]] 
+
+https:// = HTTP + SSL (szyfrowany serwer)
+https://www.google.pl/search?client=ubuntu&channel=fs&q=apache&ie=utf-8&oe=utf-8&gfe_rd=cr&dcr=0&ei=nlh0Wrb5DI6lX-buhyg
+
+zainstaluj apacha
+
+
