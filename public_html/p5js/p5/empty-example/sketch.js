@@ -4,14 +4,15 @@ function setup() {
 }
 
 function draw() {
-  // put drawing code her
-  fill('#a34cb5');
+  // put drawing code here
+  fill('#FFCC00');
   strokeWeight(10);
-  stroke('black');
+  stroke('#333333');
   ellipse(100, 200, 30, 80);
-  fill('#75b2d8');
-  stroke('pink');
-  ellipse(80, 100, 80, 30);
+  fill('#333333');
+  strokeWeight(15);
+  stroke('#FFCC00');
+  ellipse(40, 100, 80, 30);
 
   strokeWeight(5);
   stroke('black');
@@ -23,8 +24,7 @@ function draw() {
   fill('blue');
   point(100, 100);
 
-  rect(200, 200, 300, 100, 10);
-
+  rect(100, 100, 200, 50, 10);
 
 
 
