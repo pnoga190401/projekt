@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-02T12:10:58+01:00
+
+====== bootstrap ======
+Created piątek 02 marzec 2018
+
+getbootstrap.com
+
+Kategorie bootstrapa:
+- xs     najmniejsze urzadzenia    <567px
+- sm      male urzadzienia               >=576px
+-md    srednie urzadzenia             >=768px
+-lg     duze urzadzenia                     >=992px
+- xl    najwieksza urzadzenia       >=1200px
+
+containter dzieli sie na 12 czesci 
+jezeli sie przekroczy 12 to kolumny sie zawijaja
+
+margines klasa zaczyna sie od m (odleglosc od siebie)
+pomiedzy padding a margines jest border
+padding klasa zaczyna sie od p  (margines wewnetrzny)
+
+spacer- podstawowa jednostka=3
+
+my-3 i mx-3   ===  m-3
