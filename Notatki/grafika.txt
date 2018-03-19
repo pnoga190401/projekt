@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-19T09:54:03+01:00
+
+====== grafika ======
+
+=== MODEL RGB ===
+
+(0xFFFFFF) lub (255,255,255)  - kolor bialy
+(0x000000 ) lub (0,0,0) - kolor czarny
+po 0x wystepuje system szesnastkowy
+zaby zapisac informacje o jednej skladowej koloru potrzebujemu 1 bajtow a calej 4
+
+RGB i CYMK sa odwrotne
+CMYK moga miec wartosci od 1 do 100
+
+=== MODEL HSB ===
+
+H - Hue - barwa 
+H  moze byc wyrazona od 0 do 360
+S  moze byc od 0 do 100
+B  (jasnosc)  moze byc od 0 do 100
+
+przestrzen kolorow zmienia sie w zaleznosci od systemu
+
+== grafika rastrowa - prezentacja obrazu za pomoca pionowo-poziomej siatki odpowiednio kolorowanych pikseli ==
+
+grafike rastrowa zapisujemu bez kompresji 
+
+==== przykladowe prgramy: ====
+- adobe photoshop
+-GIMP
+-paint pro shop
+-my paint 
+- krita - najlepszy program malarski 
+
+BSD plis z photoshopa
+XCF plik z gimpa
+
+rozdzielczosc X *Y*4    - rozmiar obrazka
+
+====== POBIERZ GIMPA ======
