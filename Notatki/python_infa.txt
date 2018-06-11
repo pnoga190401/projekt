@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-06-11T10:20:18+02:00
+
+====== python infa ======
+Created poniedziałek 11 czerwca 2018
+
+lista       moze zawierac powtarzajace sie elementy
+zbior         zawiera niepowtarzajace sie elementy
