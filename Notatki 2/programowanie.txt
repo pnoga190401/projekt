@@ -1,0 +1,73 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-06T08:07:52+02:00
+
+====== programowanie ======
+Created czwartek 06 września 2018
+
+=== jezyk maszynowy (kod binarny) - ciagi 1 i 0 ===
+
+=== jezyk programoiwania wysokeigo poziomu ===
+if (liczba_pkt>50)
+												zaliczenie=true
+												 else
+												zaliczenie=false
+												
+=== jezyk proghramowania niskiego poziomu ===
+mov ecx, 50
+												dec ecx
+												push eax
+												pop ecx
+												or ecx, ea
+
+
+jezyk C powstał w 1971 roku; w tym jezyku napisny jest windows i linux
+jezyk Pascal powstal w 1970 roku
+
+kody zrodlowe sa plikami tekstowymi
+
+==== kompilator ====
+napisany przez tworce danego jezyka ktory przeksztalca kod zrodlowy na koid maszynowy
+
+==== linker ====
+laczy z kodem potrzebne do jego dzialania biblioteki i tworzy plik wykonywalny 
+rozszerzenie .exe jest umowne i charakterystyczne dla systemu windows
+
+kod zrodlowy kompiluje sie na rozne systemy aby mogly one dzialac 
+mozna uzywac bibliotek ktore mozna wykorzystywac na wielu systemach
+
+kod zrodlowy jest interpretowany (python java javascript) ich kod binarny jest tworzony w locie
+
+===== jak powstaje program? =====
+
+== zadania programu: ==
+- obliczanie pola
+-obliczanie objetosci
+-...
+
+== algorytmy: ==
+-pobierz promien
+-oblicz pole
+-wyswietl pole
+
+
+==== algorytmem ====
+nazywamy skonczony ciag czynnosci przeksztalcajacy zbior danych wejsciowych na zbior danych wyjsciowych
+algorytmy ktore wykonuja dzialania matematyczne na danych liczbowych nazywamy
+
+== algorytmami numerycznymi ==
+algorytmy w ktorych kolenosc czynnosci jest zawsze taka sama i niezalezna od wartosc danych wejsciowych nazywamy algorytami sekwencyjnymi lub liniowymi
+
+==== elementy schematu blokowego: ====
+blok granicnzy - poczatek algorytmu  START
+blok operacyjny- operacje zmieniajace wartosc zmiennych  x=10
+blok wejscia/wyjscia - operaxcje wprowadxzania i wyprowadzania danych   wpisz x
+blok decyzyjny - wybor jednje z dwoch mozliwych drog dzialania  x=10 tak/nie
+blok graniczny - koniec algorytmu   STOP
+
+
+
+
+
+
+
