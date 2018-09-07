@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-07T13:43:37+02:00
+
+====== cpp ======
+Created piątek 07 września 2018
+
+<iostream> - biblioteka standardowa
+
+
+int main(int argc, char **argv)
+{
+	return 0;
+}                                                                                               - funkcja glowna (main)
+
+
+==== podstawowe typy danych: ====
+char   			1 bajt 			 zakres:  -128...127
+int      			2 , 4 lub 8      	zakres: -32768 ... 32767
+long int    		 4    			zakres: - 2147483646 ... 2147483647
+float   			4     			6 cyfr znaczacych
+double  		 	8    				10 cyfr znaczacych
+bool    			1    				true [[/false]]
+
+
+
+
+
