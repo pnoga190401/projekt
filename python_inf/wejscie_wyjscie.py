@@ -3,7 +3,8 @@
 #
 #  szablon.py
 
-
+def dodaj():
+    print(a +b)
 
 def main(args):
     # a = 0  # inicjacja zmiennej
@@ -11,6 +12,8 @@ def main(args):
     print(a)
     b = int(input('Podaj liczbę 2: ')) 
     print(b)
+    
+    dodaj()
     
     print("Suma: ", a + b)
     print("Różnica: ", a - b)
