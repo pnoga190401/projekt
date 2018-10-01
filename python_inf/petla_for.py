@@ -13,9 +13,6 @@ def main(args):
     while liczba2 <= liczba:
         liczba2 = int(input('Błędny zakres! Podaj liczbę początkowa: '))
     
-    if liczba2 <= liczba:
-        print("Błędny zakres")
-        exit(0)
         
     for liczba in range(liczba, liczba2 + 1):
         if liczba % 2 == 0:

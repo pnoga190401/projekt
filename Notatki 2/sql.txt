@@ -1,0 +1,60 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-24T07:21:57+02:00
+
+====== sql ======
+Created poniedziałek 24 września 2018
+
+sqlpedia.pl
+
+1) dane nie moga sie powtarzac
+2) kolumny nie powinny zawierac roznych rodzajow danych 
+
+== normalizacja to bezstratny oproces organizowania danyh w tabelach majacy na celu zmniejszenie ilosci danych skladowanych w bazie oraz wyeliminowaniu potencjalnyc anomalii ==
+
+kazde pole przechwuje jedna informacje dzieki czemu mozemy dokonywac efektywnych zapytan. wprowadz atakze pojecie istnienia klcza glownego 
+
+kazda tabela po0winan zawierac dane dot. tylko konkretnej klasy obiektow. wszystkie atrybuty informacyjne musza zawierac informacje o elementach tej konkretnej klasy
+
+
+===== więzy integralnosci (contraints): =====
+https://edux.pjwstk.edu.pl/mat/118/lec/w8.html
+
+* id INTEGER PRIMARY KEY AUTONUMERIC
+* AUTONUMERIC
+* UNIQUE - unikalnosc wartosci w kolumnie 
+* NOT NULL - nie dopuszczenie pustych wartosci
+* FOREIGN KEY - definicja KLUCZA OBCEGO
+* nazwa_pola REFERENCES tabla(inne_pole)
+* CHECK num1 > num2 - testowanie wartosci
+* DEFAULT - wartosc domyslna
+
+ON DELETE CASCADE - razem z wierszem tabeli nadrzednej zostaja usuniete wszystkie wiersze tabeli podrzednej w ktrorych wartosc klucza obcego wskazuja na usuwany wiersz (pod warunkiem ze usuniecie tych wierszy jest mozliwe baz naruszenia innych wiezow referencyjnych)
+
+ON DELETE SET NULL/ SET DEFAULT
+
+===== data typy: =====
+https://edux.pjwstk.edu.pl/mat/118/lec/w3.html
+https://www.sqlite.org/datatype3.html
+
+* NULL 
+* INTEGER 
+* REAL - liczby zmiennoprzecinkowe
+* TEXT
+* BLOB
+
+CHAR(20) - okreslona liczba znakow reszte wypelnia spacjami
+VARCHAR(20) 
+KODOWANIE = UTF-8
+
+* BOOLEAN (0, 1)
+
+data i czas typy:
+
+TEXT - ISO8601 (YYYY-MM-DD)
+REAL - kalendarz julianski (ile dni od 24.11.4714 pne) 
+INTEGER - unix time (ile sekund od 1970-01-01 00:00:00 UTC. time)
+
+
+
+
