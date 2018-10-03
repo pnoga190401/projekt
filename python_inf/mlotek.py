@@ -1,30 +1,29 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 import random
 
 
 def main(args):
     liczba = random.randint(1, 10)  # losowanie liczby
-    # print('Wylosowano', liczba)
-    # pobieramy dane od użytkownika
+    # print('wylosowano:', liczba)
+    # pobieranie danych od uzytkowanika
     for i in range(3):
-        print('Próba', i + 1)
-        odp = input('Podaj liczbę od 1 do 10: ')
-        print('Podałeś:', odp)
+        print('proba', i + 1)
+        odp = input('podaj liczbę od 1 do 10: ')
+        print('podałeś liczbę: ', odp)
 
-        if liczba == int(odp):  # porównanie odp z wylosowaną liczbą
-            print('Zgadłeś!')
-            break  # przerwanie działania pętli
+        if liczba == int(odp):  # porownanie  odp z wylosowana liczba
+            print ('zgadłeś')
+            break  # przerwaie dzialania petli
         elif i == 2:
-            print('Wylosowano', liczba)
+            print('wylosowano: ', liczba)
         else:
-            print('Spróbuj innym razem!')
+            print ('spróbuj innym razem')
 
     return 0
 
 
 if __name__ == '__main__':
     import sys
-sys.exit(main(sys.argv))
+    sys.exit(main(sys.argv))
