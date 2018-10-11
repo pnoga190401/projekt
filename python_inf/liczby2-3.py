@@ -23,9 +23,23 @@ def liczby2():
         
     return ile
 
+def liczby3():
+   
+    ile = 0
+    for i in range(1, 10): #setki
+        for j in range(0, 10): #dziesiatki
+            for k in range(0, 10): #jednosci
+                if i == j or i == k or j == k:
+                    print("-", '', end= '')
+                else:
+                    print("{}{}{} ".format(i, j, k), end= '')
+                    ile = ile +1
+    print()
+    return ile
 
 def main(args):
     print("Liczb 2-cyfrowych:", liczby2())
+    print("Liczb 3-cyfrowych:", liczby3())
     
     
     
