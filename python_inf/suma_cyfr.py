@@ -11,20 +11,22 @@ def suma1(liczba):
         liczba = int(liczba / 10)
         
     return suma
+
+def suma2(liczba):
+    suma = 0
+    for cyfra in str(liczba):
+        suma += int(cyfra)
+        
+    return suma
         
 def main(args):
     liczba = int(input('Podaj liczbę 2-cyfrowa: ')) 
-    liczba = int(liczba) 
     
     while liczba < 10:
         liczba = int(input('Błędny zakres! Podaj liczbę 2-cyfrowa: '))
-        liczba = int(liczba)
+        
     
-    suma = 0
-    while liczba > 0:
-        suma += liczba % 10
-        liczba = int(liczba / 10)
-    print("Suma: ", suma1(liczba))
+    print("Suma: ", suma2(liczba))
     
     
     return 0
