@@ -5,20 +5,19 @@ import sqlite3
 import csv
 import os.path
 
-
 def czy_jest(plik):
-    """funkcja sprawdza istnienie pliku"""
-    if not os.path.isfile(plik):
-        print("Plik {} nie istnieje".format(plik))
+    """
+    funkcja sprawdza istnienie pliku na dysku
+    """
+    if not os.path.isfile(plik): #jeżeli pliku nie ma na dysku
+        print("Plik {} nie istnieje!".format(plik))
         return False
     return True
-
+    
 def dane_z_pliku(nazwa_pliku, separator=','):
     dane = []  # pusta lista na dane
     if not czy_jest(nazwa_pliku):
         return dane
-    
-    
     with open(nazwa_pliku, 'r', newline='', encoding='utf-8') as plik:
         tresc = csv.reader(plik, delimiter=separator)
         for rekord in tresc:
@@ -44,52 +43,70 @@ def kwerenda_1(cur):
     for row in wyniki:  # odczytywanie kolejnych rekordów
         print(tuple(row))  # drukowanie pól
 
-
 def ile_kolumn(cur, tab):
-    """ funkcja sprawdza i zwraca liczne kolumn w podanej tabeli"""
+    """ Funkcja sprawdza i zwraca liczbę kolumn w podanej tabeli"""
     licznik = 0
     for kol in cur.execute("PRAGMA table_info('" + tab + "')"):
         licznik += 1
     return licznik
-
+    
 def main(args):
-    # KONFIGURACJA #####
-    baza_nazwa = 'baza_prep'
-    tabele = ['uczniowie', 'klasy', 'przedmioty', 'oceny']
+    # KONFIGURACJA 
+    #######
+    baza_nazwa = 'baza'
+    tabele = ['uczniowie','klasy','przedmioty','oceny']
     roz = '.csv'
-    ###################
+    ############
     
     con = sqlite3.connect(baza_nazwa + '.db')  # połączenie z bazą
     cur = con.cursor()  # utworzenie kursora
-    
 
     # utworzenie tabeli w bazie
     if not czy_jest(baza_nazwa + '.sql'):
         return 0
-    
     with open(baza_nazwa + '.sql', 'r') as plik:
         cur.executescript(plik.read())
+
+    # dodawanie danych do bazy
+    """dane = dane_z_pliku('uczniowie.csv')
+    print(dane)
+    dane.pop(0)  # usuń pierwszy rekord z listy
+    cur.executemany('INSERT INTO customers VALUES(?, ?, ?, ?, ?, ?, ?)', dane)
+
+    dane = dane_z_pliku('klasy.csv')
+    print(dane)
+    dane.pop(0)  # usuń pierwszy rekord z listy
+    cur.executemany('INSERT INTO subscriptions VALUES(?, ?, ?)', dane)
+
+    dane = dane_z_pliku('przedmioty.csv')
+    print(dane)
+    dane.pop(0)  # usuń pierwszy rekord z listy
+    cur.executemany('INSERT INTO orders VALUES(?, ?, ?, ?)', dane)
+
+    dane = dane_z_pliku('oceny.csv')
+    print(dane)
+    dane.pop(0)  # usuń pierwszy rekord z listy
+    cur.executemany('INSERT INTO orders VALUES(?, ?, ?, ?)', dane)
+    # przykład zapytania (kwerendy)
+    #kwerenda_1(cur) """
     
-    #dodawanie danych
+    #dodawanie danych 
     for tab in tabele:
         ile = ile_kolumn(cur, tab)
-        dane = dane_z_pliku(tab + roz, separator= ',')
+        dane = dane_z_pliku(tab + roz, separator=',')
         ile_d = len(dane[0])
         
-        if ile > ile_d:  #trzeba dodac None
-            dane2 = []  #tyczasowa lista
+        if ile > ile_d: # trzeba dodać None
+            dane2 = [] # tymczsowa lista
             for r in dane:
                 r.insert(0, None)
                 dane2.append(r)
             dane = dane2
-            
+    
         ile = len(dane[0])
-                
+        
         cur.executemany('INSERT INTO ' + tab +
-            ' VALUES(' + ','.join(['?'] * ile) + ')', dane)
-            
-            
-
+            ' VALUES('+ ','.join(['?'] * ile) + ')', dane)
     con.commit()  # zatwierdzenie zmian w bazie
     con.close()  # zamknięcie połączenia z bazą
     return 0
