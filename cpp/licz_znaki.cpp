@@ -94,6 +94,7 @@ int main(int argc, char **argv)
     //cout << ilosc;
     ascii(znaki, ilosc);
     //zamiana_liter(znaki);
+    odwroc(znaki, ilosc);
 	return 0;
 }
 
