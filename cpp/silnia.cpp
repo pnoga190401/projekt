@@ -22,6 +22,19 @@ int silnia_it(int a){
     return wynik;
 }
 
+// silnia _re(5)
+// silnia_re(4)*5
+// silnia_re(3)*4
+// silnia_re(2)*3
+// silnia_re(1)*2
+// silnia_re(0)*1
+// 1
+// 1 * 1
+// 1 * 2
+// 2 * 3
+// 6 * 4
+// 24 * 5
+// 120
 
 int main(int argc, char **argv)
 {
