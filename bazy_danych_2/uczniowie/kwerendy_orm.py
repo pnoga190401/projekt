@@ -19,16 +19,31 @@ def kw02():
     query = (Uczen
         .select(Uczen.nazwisko, Uczen.imie, Uczen.klasa.nazwa.asc())
         .join(Klasa)
+        .order_by(Uczen.klasa.nazwa.asc())
     )
     for obj in query:
         print(obj.nazwisko, obj.imie, obj.klasa.nazwa)
+        
+        
+def kw03():
+    query = (Ocena
+        .select(Ocena.uczen.nazwisko, fn.AVG(Ocena.ocena).alias('ile_ocen'))
+        
+        .join(Uczen)
+        .group_by(Ocena.uczen.nazwisko)
+        .order_by(SQL('ile_ocen').asc())
+        
+        
+    )
+    for obj in query:
+        print(obj.uczen.nazwisko, obj.ile_ocen)
 
 
 
 def main(args):
     baza.connect()
     
-    kw02()
+    kw03()
     
     baza.close()
     return 0
