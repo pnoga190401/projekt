@@ -5,6 +5,7 @@
 #  
 import os
 import csv
+from modele import *
 
 def czy_jest(plik):
     """ Funkcja sprawdza istnienie pliku na dysku """
@@ -23,10 +24,10 @@ def dane_z_pliku(nazwa_pliku, separator=','):
         tresc = csv.reader(plik, delimiter=separator)
         for rekord in tresc:
             rekord = [x.strip() for x in rekord]  # oczyszczamy dane
-            dane.append(rekord)  # dodawanie rekordĂłw do listy
+            dane.append(rekord)  # dodawanie rekordów do listy
     return dane
 
-def dodaj_dane():
+def dodaj_dane(dane):
     for model, plik in dane.items():
         pola = [pole for pole in model._meta.fields]
         pola.pop(0)
@@ -34,7 +35,6 @@ def dodaj_dane():
         print(wpisy)
         with baza.atomic():
             model.insert_many(wpisy, fields=pola).execute()
-)
 
 def main(args):
     if os.path.exists(baza_plik):
