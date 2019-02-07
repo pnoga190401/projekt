@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-02-07T07:31:18+01:00
+
+====== kompresja ======
+Created czwartek 07 lutego 2019
+
+zmienijszanie ilosci danych zeby informacje istotne zachowac
+
+wspolczynnik kompresji
+Rc = Vk/Vnk*100%    - o ile zmniejszyly sie dane 
+Rc= (1-Vk/Vnk)*100%     - ile miejsca zaoszczedzono
+
+Rc = 74171/117760* 100% =
+
+115 kB = 115 *1024 = 117760
+
+8 bitow = 1 Bajt
+1kB = 1024 B
+1MB = 1024 kB
+1GB = 1024 MB
+1TB = 1024 GB
