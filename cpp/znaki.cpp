@@ -5,6 +5,7 @@
 // ctrl + e   - szybkie komentowanie
 
 #include <iostream>
+#include <string.h>
 
 using namespace std;
 
@@ -43,7 +44,12 @@ int main(int argc, char **argv)
     const int rozmiar = 20;
 	char znaki[rozmiar];
     cin.getline(znaki, rozmiar);
-    licz_znaki(znaki, cin.gcount());
+    //licz_znaki(znaki, cin.gcount());
+    int ilosc =0;
+    //ilosc = cin.gcount();
+    //ilosc = zlicz(znaki);
+    ilosc = strlen(znaki);
+    ascii(znaki, ilosc);
 	return 0;
 }
 
