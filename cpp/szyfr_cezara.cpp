@@ -8,21 +8,22 @@ using namespace std;
 #include <string.h>
 #define MAKS 100
 
-void szyfruj(char tekst, int klucz){
-    for(i = 1; i < MAKS; i++ )
+void szyfruj(char tb[], int klucz){
+    klucz = klucz % 26;
     int kod = 0;
-    for (int i = 0; i < roz; i++){
-        kod = (int)tb[i];
-        if (kod > 96 && kod < 123)
-            kod -= 32;
-            //cout << (char)(kod-32) << " ";
-        else if (kod > 64 && kod < 91)
-            kod += 32;
-            //cout << (char)(kod+32) << " ";
-        //else
-            //cout << tb[i] << " ";
-        cout << (char)kod << " ";
+    int i = 0;
+    while (tb[i] != '\0'){
+        kod = (int)tb[i] + klucz;
+        if (tb[i] == ' '){
+            kod -= klucz;
+        } else if (kod > 122){
+            kod -= 26;
+        }
+        cout << (char)kod;
+        tb[i]= (char)kod;
+        i++;
     }
+    cout << endl;
 }
 
 int main(int argc, char **argv)
@@ -34,7 +35,7 @@ int main(int argc, char **argv)
     cin.getline(tekst, MAKS);
     cout << "Podaj klucz: ";
     cin >> klucz;
-    szyfruj(tekst, klucz)
+    szyfruj(tekst, klucz);
 	return 0;
 }
 
