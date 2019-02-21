@@ -13,11 +13,16 @@ void deszyfruj(char tb[], int klucz){
     int i = 0;
     int kod = 0;
     while (tb[i] != '\0'){
-        kod = (int)tb[i] - klucz;
-        if (tb[i] == ' '){
-            kod += klucz;
-        } else if (kod > 122){
-            kod += 26;
+        kod = (int) tb[i];
+        if (tb[i] == ' ')
+        {
+            ;
+        } else if (kod < 91) {
+            kod -= klucz;
+            if (kod < 65) kod += 26;  
+        } else {
+            kod -= klucz;
+            if (kod < 97) kod += 26;
         }
         cout << (char)kod;
         tb[i]= (char)kod;
@@ -41,7 +46,7 @@ void szyfruj(char tb[], int klucz){
         } else {
             kod += klucz;
             if (kod > 122) kod -= 26;
-            }
+        }
       
         cout << (char)kod;
         tb[i]= (char)kod;
