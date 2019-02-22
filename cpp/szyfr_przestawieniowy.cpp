@@ -1,37 +1,36 @@
 /*
- * szyfr_cezara.cpp 
+ * szyfr_przestawieniowy.cpp 
  */
 
+#include<iostream>
+#include<cstring>
 using namespace std;
 
-#include <iostream>
-#include <string.h>
-
-
-void deszyfruj(char tb[], int klucz){
-    klucz = klucz % 26;
-    int i = 0;
-    int kod = 0;
-    while (tb[i] != '\0'){
-    }
-}
-
-void szyfruj(char tb[], int klucz){
-    int ile = strlen(tb)
-    ile znaków uzupelnic kropkami
-    uzupelnic kropkami
-}
-
-int main(int argc, char **argv)
+void kodowanie(char *napis)
 {
+	int dl = strlen(napis); //wyznaczenie liczby znaków
 	
-    int klucz = 0;
-    
-    cout << "Podaj tekst w małych literach: " << endl;
-    cin.getline(tekst, MAKS);
-    cout << "Podaj klucz: ";
-    cin >> klucz;
-    //szyfruj(tekst, klucz);
-    deszyfruj(tekst, klucz);
+	for(int i=0; i<dl-1; i+=2) //przesuwamy się o dwa znaki
+	//zamiana sąsiadujących znaków
+	{
+		char pom = napis[i];
+		napis[i] = napis[i+1]; //dlatego w pętli i<dl-1
+		napis[i+1] = pom;	
+	}
+}
+
+int main()
+{
+	char napis[100];
+	
+	cout<<"Podaj napis do zaszyfrowania: ";
+	cin.getline(napis, 100);
+	//szyfrujemy
+	kodowanie(napis);
+	cout<<"Szyfrogram: ";
+	cout<<napis<<endl;
+	
+	
+	cin.get();
 	return 0;
 }
