@@ -1,0 +1,45 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-02-28T07:20:10+01:00
+
+====== systemy operacyjne ======
+Created czwartek 28 lutego 2019
+
+pamiec sekwencyjna - 
+pamiec RAM - pamiec o dostepie swobodnym- podstawowy rodzaj pamieci cyfrowej
+pamiec ROM - pamiec tylko do odczytu 
+BIOS - podstawowy system wejscia-wyjscia zapisany w pamieci stalej
+UEFI - interfejs pomierzy systemem operacynym a firmware
+pamiec podreczna - 
+pamiec masowa - pamiec trwala ktora umozliwia przechowywanie duzej ilosci danych przez dlugi czas
+dysk SSD - nie jest dyskiem mechanicznym, urzadzenie pamieci masowej zbudowane w oparciu o pamiec flash
+szyna danyc h - czesc magistrali komunikacyjenj odpowiedzialna za transmisje walsciwych danych w odroznieu od danych adresowych czy sygnalow streujacych
+
+najwazniesza rzecza w procesorze jest zespol rejestrow ktory slozy do przechowywanie tymczasowych wynikow obliczen
+
+
+
+===== LINUX =====
+tablica typu FAT jest ograniczona
+MBR czesc sektorow na dysku twardym w ktorych zaoisana jest informacja z ktorej partycji nalezy uruchamiac komputer (partycja rozruchowa/ aktywna - uruchamia system)
+
+partycja ROOT - 
+
+formatowanie - 
+
+montowanie - polega na dolaczeniu zasubu dyskowego do struktury plikow  
+
+linux - jadro systemowe/system operacyjny
+
+open source - otwarty i wolny system 
+
+jest pisany jezykiem C i C++
+
+srodowiska graficzne:
+GNOME
+KDE
+XFCE
+
+bootloader - odpowiada za rozruch systemu
+powloka w windowsie nazywa sie kommand lub powershell
+grupy systemowe - pozwalaja dawac uzytkownikowi uprawnienia 
