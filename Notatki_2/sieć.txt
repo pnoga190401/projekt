@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-03-15T13:55:03+01:00
+
+====== sieć ======
+Created piątek 15 marca 2019
+
+komputery sa polaczoine z siecia za pomoca ethernetu
+
+skretka  -  jest to kabel ktory sklada sie z 8 kabli ktore sa skrecone zeby nie dochodzilo do zaklocen jeden jest pusty a drugi pelny
+
+ethernet skretka + RJ45
+przepustowosc 
+predkosc jest zmienna
+
+adres IPv4: 
+192.168.x.x
+10.x.x.x
+172.16.x.x
+^ siec lokalna   LAN- local area network
+komputer (desktop, laptop(eth, wifi)
+smartfony, drukarki)
+
+swith - przelacznik - interfejsy wewnetrzne
+router (swith + router) -  interfejs wewnetrzny i zewnetrzny(DSL, WAN)
+router laczy sieci za pomoca IP
+routing (trasowanie)
+1 LAN do 254 komputerow moze zawierac
+

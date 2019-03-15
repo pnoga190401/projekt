@@ -43,3 +43,10 @@ XFCE
 bootloader - odpowiada za rozruch systemu
 powloka w windowsie nazywa sie kommand lub powershell
 grupy systemowe - pozwalaja dawac uzytkownikowi uprawnienia 
+
+===== WINDOWS =====
+
+Podstawowym zadaniem systemu operacyjnego jest zarzadzanie pamiecia, przydzielanie czasu procesora, 
+
+wspolczesne systemy operacyne sa wielozadaniowe, DOS nie jest
+
