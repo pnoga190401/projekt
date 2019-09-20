@@ -1,0 +1,41 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-17T07:22:20+02:00
+
+====== bazy ======
+Created wtorek 17 września 2019
+
+1) wskazowki:
+
+- mozna uzyc sortowania 
+-mozna uzyc funkcji arkusza PODAJ.POZYCJE
+-koumn z powtarzajacy mi sie danymi
+
+2) anomlaie bez danych:
+
+redundancja
+-anomalia modyfikacji
+-anomalia usuwania
+-anomalia dodawania
+
+3) normalizacja bazy danych
+
+-atomowosc informacji
+
+
+==== arkusz- polecenia ====
+Dane/Tekst jako kolumny
+Dane/wiecej filtrow/filtr standardowy - (bez duplikatow)
+dane/sortuj
+
+
+==== funkcje tekstowe w arkuszu: ====
+lewy
+prawy
+dł
+podaj.pozycję
+
+
+
+ctrl+shift+V -  wklejanie specjalne
+ctrl+shift+strzalka w dol -
