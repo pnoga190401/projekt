@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-10-03T12:57:59+02:00
+
+====== pycharm ======
+Created czwartek 03 października 2019
+
+python manage.py check
+python manage.py makemigrations pizza
+python manage.py sqlmigrate pizza 0001 (0002, 0003, ...)
+python manage.py migrate
+python manage.py dbshell
+python manage.py shell
+	from pizza.models import Pizza, Skladnik
+	p1 (p2, p3, ...) = Pizza(nazwa='Hawajska') - dodawanie pizz
+	p1.save()
+	Pizza.objects.all()
+	p1 = Pizza.objects.get(pk=1)
+	p1.nazwa
+	s1.pizza.add(p1) - przypisywanie skladnkow do pizz
+	s1.pizza.add(p2,p3)
+	p1.skladniki.all()  - jakie sa skladniki w tej pizzy
+	s1.pizza.all() - w jakich pizzach jest skladnik
+	
+	
+exit()
+

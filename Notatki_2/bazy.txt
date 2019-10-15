@@ -39,3 +39,8 @@ podaj.pozycję
 
 ctrl+shift+V -  wklejanie specjalne
 ctrl+shift+strzalka w dol -
+
+==== kryteria w bazach ====
+
+LIKE '*a'
+='pomorskie'
